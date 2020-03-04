@@ -95,7 +95,9 @@ public class main {
 				SimpleMath Math = new SimpleMath();
 				 
 				try { 	
-					double result = Math.divide(num, den);			}
+					double result = Math.divide(num, den);
+					calculation.setText(Double.toString(result));
+				}
 				catch ( ArithmeticException e1) {
 					calculation.setText("Cannot divide by 0");
 					
